@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(){
+
+float p, a, i;
+
+printf("informe seu peso: "); //chama infromação de peso 
+scanf("%f" ,&p); //guardar a informação sobre o peso
+printf("informe sua altura: "); //pede a altura 
+scanf("%f" ,&a); // guarda a altura
+
+i = p/(a * a); //calcula o IMC dando prioridade a multiplicação 
+
+printf("seu imc = %f" ,i); // mostra o valor o IMC
+
+   
+}
