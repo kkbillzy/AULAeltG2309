@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+
+float d,v,c;
+
+printf ("distancia eh de (km):");
+scanf("%f" ,&d);
+printf("volume eh de (l):");
+scanf("%f" ,&v);
+
+c = d/v;
+
+printf("seu consumo medio eh = %f" ,c);
+
+}
