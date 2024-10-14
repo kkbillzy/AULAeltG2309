@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void) 
+{ 
+     int quantidadeFolhas;
+     float totalPago;
+       
+     printf ("Digite a quantidade de folhas\t");
+     scanf ("%d", &quantidadeFolhas);
+
+     if 
+     (quantidadeFolhas > 100)
+     {
+     totalPago = quantidadeFolhas*0.20;
+     printf ("Total à ser pago: R$ %.2f\n\n\n", totalPago);
+     }
+     else 
+     {
+     totalPago = quantidadeFolhas*0.25;
+     printf ("Total à ser pago : R$ %.2f\n\n\n", totalPago);
+     }
+    
+     return 0;
+}
