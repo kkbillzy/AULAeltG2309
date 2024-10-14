@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int tp, def;
+    float percentual_defeitos;
+
+    printf("Digite o total de pecas produzidas: ");
+    scanf("%d", &tp);
+
+    printf("Digite o total de pecas defeituosas: ");
+    scanf("%d", &def);
+
+    percentual_defeitos = (def / (float)tp) * 100;
+
+    if (percentual_defeitos > 10) {
+        printf("A maquina precisa de manutencao.\n");
+    } else {
+        printf("A maquina nao precisa de manutencao.\n");
+    }
+
+    return 0;
+}
