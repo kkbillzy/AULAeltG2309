@@ -1,0 +1,32 @@
+#include <stdio.h> 
+
+int main() {
+    int n;  
+    int idade;  
+    int mais_idoso = -1;  
+
+    // Solicita o número de pacientes
+    printf("Informe o número de pacientes: ");
+    scanf("%d", &n);  
+    
+    if (n <= 0) {
+        printf("Número de pacientes deve ser maior que 0!\n");
+        return 1;  
+    }
+
+
+    for (int i = 1; i <= n; i++) {
+        printf("Informe a idade do paciente %d: ", i);
+        scanf("%d", &idade);  
+
+        
+        if (idade > mais_idoso) {
+            mais_idoso = idade;  
+        }
+    }
+
+    
+    printf("A idade do paciente mais idoso é: %d\n", mais_idoso);
+
+    return 0;
+}
