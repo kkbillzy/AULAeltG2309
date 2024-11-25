@@ -1,0 +1,23 @@
+#include <stdio.h>  
+
+int main() {
+    float capital, juros, montante;
+
+    
+    printf("capital? ");
+    scanf("%f", &capital);
+
+    
+    printf("juros? ");
+    scanf("%f", &juros);
+
+    montante = capital;
+
+  
+    for (int mes = 1; mes <= 3; mes++) {
+        montante = montante * (1 + juros / 100);  
+        printf("mes %d: %.2f\n", mes, montante);  
+    }
+
+    return 0;
+}
